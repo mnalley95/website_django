@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mark Nalley</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Mark Nalley</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% load static %}
+        <img src="{% static 'index/headshot.jpg' %}" alt="My image">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm currently working in Operations at Apple, after a few stints working in Operations and Supply Chain
+                at CPG companies in Atlanta.</p>
+            <p>My creative outlets are data science and software development. I'm a self-taught developer, and have used
+                my skills to build several
+                packages and tools to make my coworkers and I work more efficiently</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Some of my work:</p>
+            <ul>
+                <li>This website</li>
+                <li>Automated demand forecasting package</li>
+                <li>Dashboarding and Analytics (PowerBI, Tableau, Streamlit)</li>
+            </ul>
+        </section>
+        <section id="resume">
+            <h2>Resume</h2>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out to me:</p>
+            <ul>
+                <li>
+                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
+                        data-type="VERTICAL" data-vanity="marknalley" data-version="v1"><a
+                            class="badge-base__link LI-simple-link"
+                            href="https://www.linkedin.com/in/marknalley?trk=profile-badge">LinkedIn</a></div>
+                </li>
+                <li>
+                    <a class="github-button" href="https://github.com/mnalley95" data-show-count="true"
+                        aria-label="Follow @your-username on GitHub">@mnalley95</a>
+                </li>
+            </ul>
+
+
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; Mark Nalley</p>
+    </footer>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
