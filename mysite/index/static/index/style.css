@@ -48,10 +48,11 @@ main {
 }
 
 section {
-    background-color: #FFF;
+    background-color: #ffa;
     box-shadow: 0 0 10px #BBB;
     margin: 20px 0;
     padding: 20px;
+    border-radius: 8px;
 }
 
 h2 {
