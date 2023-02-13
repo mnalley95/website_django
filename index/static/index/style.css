@@ -6,8 +6,12 @@
     background-color: #727272;
     background-image: url("");
     background-repeat: repeat;
-    background-size: cover;
+    background-size: auto;
     background-position: 100%;
+}
+
+main {
+    padding: 0px;
 }
 
 body {

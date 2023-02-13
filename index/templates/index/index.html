@@ -10,21 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
-<div id="particles-js">
 
-    <body>
-        <header>
-            <h1>Mark Nalley</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<body>
+    <header>
+        <h1>Mark Nalley</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="particles-js">
         <main>
             {% load static %}
             <img src="{% static 'index/images/headshot.jpg' %}" alt="My image">
@@ -96,18 +97,17 @@
 
             </section>
         </main>
-        <footer>
-            <p>Copyright &copy; Mark Nalley</p>
-        </footer>
-        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
-        <!-- particles.js container -->
-        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-        <script src="{% static 'index/js/background.js' %}"></script>
+    </div>
+    <footer>
+        <p>Copyright &copy; Mark Nalley</p>
+    </footer>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- particles.js container -->
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="{% static 'index/js/background.js' %}"></script>
 
-    </body>
-
-</div>
+</body>
 
 </html>
