@@ -15,6 +15,10 @@ CSRF_TRUSTED_ORIGINS = (
 )
 DEBUG = False
 
+CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
+SECRET_KEY = os.environ["SECRET_KEY"]
+
 # WhiteNoise configuration
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
