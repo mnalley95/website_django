@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'marknalley'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F34A82EB11504C349D3F62ABA272B812 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_90A3CD4998764C2D9BDAAB6032254FA7 }}
