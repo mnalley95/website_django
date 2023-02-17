@@ -17,6 +17,7 @@ DEBUG = False
 
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
 SECRET_KEY = os.environ["SECRET_KEY"]
 
 # WhiteNoise configuration
