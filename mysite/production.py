@@ -6,13 +6,13 @@ from .settings import BASE_DIR
 # Configure the domain name using the environment variable
 # that Azure automatically creates for us.
 ALLOWED_HOSTS = (
-       ["https://" + "marknalley.com",
-    "https://" + "marknalley.azurewebsites.com"
+       ["marknalley.com",
+    "marknalley.azurewebsites.net"
     ]
 )
 CSRF_TRUSTED_ORIGINS = (
     ["https://" + "marknalley.com",
-    "https://" + "marknalley.azurewebsites.com"
+    "https://" + "marknalley.azurewebsites.net"
     ]
 )
 DEBUG = True
