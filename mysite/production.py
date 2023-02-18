@@ -15,7 +15,7 @@ CSRF_TRUSTED_ORIGINS = (
     "https://" + "marknalley.azurewebsites.com"
     ]
 )
-DEBUG = False
+DEBUG = True
 
 CSRF_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = False
