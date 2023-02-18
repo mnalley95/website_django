@@ -5,16 +5,11 @@ from .settings import BASE_DIR
 
 # Configure the domain name using the environment variable
 # that Azure automatically creates for us.
-ALLOWED_HOSTS = (
-       ["marknalley.com",
-    "marknalley.azurewebsites.net"
-    ]
-)
-CSRF_TRUSTED_ORIGINS = (
-    ["https://" + "marknalley.com",
-    "https://" + "marknalley.azurewebsites.net"
-    ]
-)
+ALLOWED_HOSTS = ["marknalley.com", "marknalley.azurewebsites.net"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://" + "marknalley.com",
+    "https://" + "marknalley.azurewebsites.net",
+]
 DEBUG = False
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
@@ -36,7 +31,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-STATICFILES_STORAGE = "Whitenoise.storage.CompressedStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Configure Postgres database based on connection string of the libpq Keyword/Value form
